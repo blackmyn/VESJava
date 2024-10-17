@@ -1,13 +1,17 @@
 @echo off
-cd ../src/main/java
 
-javac com/ecosystem/*.java com/ecosystem/utils/*.java
+cd /d "%~dp0"
+
+echo Compiling Java files...
+for %%a in (..\src\main\java\com\ecosystem\*.java) do javac -d "..\classes" %%a
+for %%a in (..\src\main\java\com\ecosystem\utils\*.java) do javac -d "..\classes" %%a
 
 if %errorlevel% == 0 (
-    echo Запуск приложения...
-    java com.ecosystem.App
+    echo Starting program...
+    cd ..
+    java -cp "..\classes" D:\skillss\VESJava\src\main\java\Main.java
 ) else (
-    echo Ошибка компиляции!
+    echo Compilation Error! Check for problems in your Java code.
 )
 
-pause
+pause Press Enter to close... 

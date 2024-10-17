@@ -25,6 +25,18 @@ public class Resource {
         this.amount = amount;
     }
 
+    public void replenish(int amount) {
+        this.amount += amount;
+    }
+
+    public void consume(int amount) {
+        if (this.amount >= amount) {
+            this.amount -= amount;
+        } else {
+            System.out.println("Not enough " + type);
+        }
+    }
+
     @Override
     public String toString() {
         return "Resource: " +

@@ -1,0 +1,3 @@
+Water 1
+Minerals 1
+Sunlight 1

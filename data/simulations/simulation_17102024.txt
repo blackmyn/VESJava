@@ -1,0 +1,5 @@
+Your EcoSystem: 
+Animals: [Animal: Dog, population: 22, Animal: Kangaroo, population: 37, Animal: Dolphin, population: 44],
+Plants: [Plant: Rose, quantity: 7, Plant: Mint, quantity: 15],
+Resources: [Resource: Water, amount: 218.38410313785948],
+Climate: Temperature: 35.23569798085026, Humidity: 71.9723106648436

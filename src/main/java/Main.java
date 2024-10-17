@@ -3,23 +3,21 @@ import ecosystem.EcoSystem;
 
 import java.util.Scanner;
 
-public class App {
-    public static void main(String[] args) {
+class App {
+   public static void main(String[] args) {
         EcoSystem ecosystem = new EcoSystem();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Добро пожаловать в симулятор экосистемы!");
-        System.out.println("1. Создать новую симуляцию");
-        System.out.println("2. Продолжить существующую симуляцию");
+        System.out.println("Welcome to the ecosystem simulator!");
+        System.out.println("1. Create new simulation.");
+        System.out.println("2. Load existing simulation.");
 
         int choice = scanner.nextInt();
         if (choice == 1) {
             //ecosystem.createNewSimulation();
         } else {
-            System.out.println("Выберите файл симуляции для загрузки:");
-            // Добавьте логику для загрузки симуляции
+            System.out.println("Select the simulation file to load:");
         }
 
-        // Логика для управления экосистемой в цикле
     }
 }

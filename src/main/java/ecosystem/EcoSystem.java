@@ -30,17 +30,17 @@ public class EcoSystem {
         resources.add(resource);
     }
     public void showEcosystem() {
-        System.out.println(": ");
+        System.out.println("Current animals: ");
         for (Animal animal : animals) {
             System.out.println(animal);
         }
 
-        System.out.println("Текущие растения: ");
+        System.out.println("Current plants: ");
         for (Plant plant : plants) {
             System.out.println(plant);
         }
 
-        System.out.println("Текущие ресурсы: ");
+        System.out.println("Current resources: ");
         for (Resource resource : resources) {
             System.out.println(resource);
         }

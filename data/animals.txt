@@ -1,20 +1,20 @@
-Dog 1
-Cat 1
-Elephant 1
-Tiger 1
-Lion 1
-Giraffe 1
-Zebra 1
-Bear 1
-Dolphin 1
-Shark 1
-Eagle 1
-Penguin 1
-Kangaroo 1
-Rabbit 1
-Horse 1
-Fox 1
-Owl 1
-Snake 1
-Turtle 1
-Crocodile 1
+Dog HERBIVORE 1
+Cat CARNIVORE 1
+Elephant HERBIVORE 1
+Tiger CARNIVORE 1
+Lion CARNIVORE 1
+Giraffe HERBIVORE 1
+Zebra HERBIVORE 1
+Bear CARNIVORE 1
+Dolphin CARNIVORE 1
+Shark CARNIVORE 1
+Eagle CARNIVORE 1
+Penguin CARNIVORE 1
+Kangaroo HERBIVORE 1
+Rabbit HERBIVORE 1
+Horse HERBIVORE 1
+Fox CARNIVORE 1
+Owl CARNIVORE 1
+Snake CARNIVORE 1
+Turtle HERBIVORE 1
+Crocodile CARNIVORE 1

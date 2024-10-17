@@ -31,19 +31,20 @@ public class EcoSystem {
         for (int i = 0; i < numberOfAnimals; i++) {
             Animal randomAnimal = availableAnimals.get(random.nextInt(availableAnimals.size()));
             int randomPopulation = random.nextInt(50) + 1;
-            animals.add(new Animal(randomAnimal.getName(), randomPopulation));
+            animals.add(new Animal(randomAnimal.getName(), randomPopulation, randomAnimal.getType()));
         }
 
         int numberOfPlants = random.nextInt(3) + 1;
         for (int i = 0; i < numberOfPlants; i++) {
             Plant randomPlant = availablePlants.get(random.nextInt(availablePlants.size()));
-            int randomQuantity = random.nextInt(100) + 1;
+            int randomQuantity = random.nextInt(10000) + 1;
             plants.add(new Plant(randomPlant.getName(), randomQuantity));
         }
 
-        Resource randomResource = availableResources.get(random.nextInt(availableResources.size()));
-        double randomResourceAmount = Math.round(random.nextDouble() * 1000 * 10.0) / 10.0;
-        resources.add(new Resource(randomResource.getType(), randomResourceAmount));
+        for (Resource templateResource : availableResources) {
+            double randomResourceAmount = Math.round(random.nextDouble() * 1000 * 10.0) / 10.0;
+            resources.add(new Resource(templateResource.getType(), randomResourceAmount));
+        }
 
         double randomTemperature = Math.round(random.nextDouble() * 40 * 10.0) / 10.0;
         double randomHumidity = Math.round(random.nextDouble() * 100 * 10.0) / 10.0;
@@ -134,5 +135,21 @@ public class EcoSystem {
 
     public void setClimate(Climate climate) {
         this.climate = climate;
+    }
+
+    public Climate getClimate() {
+        return climate;
+    }
+
+    public List<Animal> getAnimals() {
+        return animals;
+    }
+
+    public List<Plant> getPlants() {
+        return plants;
+    }
+
+    public List<Resource> getResources() {
+        return resources;
     }
 }

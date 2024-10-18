@@ -1,23 +1,25 @@
 package ecosystem;
 
-public class Resource {
-    private String type;
+import java.io.Serializable;
+
+public class Resource implements Serializable {
+    private ResourceType type;
     private double amount;
 
-    public Resource(String type, double amount){
+    public enum ResourceType {
+        WATER, MINERALS, SUNLIGHT
+    }
+
+    public Resource(ResourceType type, double amount) {
         this.type = type;
         this.amount = amount;
     }
 
-    public String getType(){
+    public ResourceType getType() {
         return type;
     }
 
-    public void setType(String type){
-        this.type = type;
-    }
-
-    public double getAmount(){
+    public double getAmount() {
         return amount;
     }
 
@@ -25,22 +27,8 @@ public class Resource {
         this.amount = amount;
     }
 
-    public void replenish(int amount) {
-        this.amount += amount;
-    }
-
-    public void consume(int amount) {
-        if (this.amount >= amount) {
-            this.amount -= amount;
-        } else {
-            System.out.println("Not enough " + type);
-        }
-    }
-
     @Override
     public String toString() {
-        return "Resource: " +
-                type +
-                ", amount: " + amount;
+        return "Resource: " + type + ", amount: " + amount;
     }
 }

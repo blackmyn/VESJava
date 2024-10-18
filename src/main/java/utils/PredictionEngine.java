@@ -89,11 +89,11 @@ public class PredictionEngine {
     }
 
     private boolean checkFoodAvailability(Animal animal, EcoSystem ecosystem) {
-        if (animal.getType() == AnimalType.HERBIVORE) {
+        if (animal.getType() == Animal.AnimalType.HERBIVORE) {
             return ecosystem.getPlants().stream().anyMatch(p -> p.getQuantity() > 0);
-        } else if (animal.getType() == AnimalType.CARNIVORE) {
+        } else if (animal.getType() == Animal.AnimalType.CARNIVORE) {
             List<Animal> herbivores = ecosystem.getAnimals().stream()
-                    .filter(a -> a.getType() == AnimalType.HERBIVORE && a.getPopulation() > 0)
+                    .filter(a -> a.getType() == Animal.AnimalType.HERBIVORE && a.getPopulation() > 0)
                     .collect(java.util.stream.Collectors.toList());
             return !herbivores.isEmpty();
         }

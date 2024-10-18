@@ -1,5 +1,0 @@
-Your EcoSystem: 
-Animals: [Animal: Elephant, population: 29, Animal: Horse, population: 32, Animal: Horse, population: 34, Animal: Elephant, population: 29],
-Plants: [Plant: Orchid, quantity: 4, Plant: Bamboo, quantity: 24, Plant: Tulip, quantity: 42],
-Resources: [Resource: Sunlight, amount: 921.3],
-Climate: Temperature: 21.1, Humidity: 25.7

@@ -1,0 +1,300 @@
+Animals:
+ - Animal: Dog, population: 4, type: CARNIVORE
+ - Animal: Tiger, population: 90, type: CARNIVORE
+ - Animal: Elephant, population: 81, type: HERBIVORE
+Plants:
+ - Plant: Mint, quantity: 2
+ - Plant: Pine, quantity: 126
+ - Plant: Oak, quantity: 429
+ - Plant: Cherry, quantity: 458
+ - Plant: Jasmine, quantity: 109
+ - Plant: Maple, quantity: 240
+ - Plant: Ivy, quantity: 956
+Environment:
+ - Temperature: 26.03°C
+Humidity: 79.40%
+Water: 0.02
+Minerals: 2.82
+Sunlight: 50.86
+Day 1:
+Your EcoSystem: 
+Animals: [Animal: Dog, population: 4, type: CARNIVORE, Animal: Tiger, population: 90, type: CARNIVORE, Animal: Elephant, population: 81, type: HERBIVORE],
+Plants: [Plant: Mint, quantity: 2, Plant: Pine, quantity: 126, Plant: Oak, quantity: 429, Plant: Cherry, quantity: 458, Plant: Jasmine, quantity: 109, Plant: Maple, quantity: 240, Plant: Ivy, quantity: 956],
+Resources: [Resource: WATER, amount: 571.0, Resource: MINERALS, amount: 498.4, Resource: SUNLIGHT, amount: 508.6],
+Climate: Temperature: 36.0, Humidity: 42.9
+Environment: Temperature: 26.03°C
+Humidity: 79.40%
+Water: 0.02
+Minerals: 2.82
+Sunlight: 50.86
+
+Animals:
+ - Animal: Dog, population: 3, type: CARNIVORE
+ - Animal: Tiger, population: 93, type: CARNIVORE
+ - Animal: Elephant, population: 74, type: HERBIVORE
+Plants:
+ - Plant: Mint, quantity: 0
+ - Plant: Pine, quantity: 59
+ - Plant: Oak, quantity: 222
+ - Plant: Cherry, quantity: 237
+ - Plant: Jasmine, quantity: 57
+ - Plant: Maple, quantity: 125
+ - Plant: Ivy, quantity: 493
+Environment:
+ - Temperature: 25.83°C
+Humidity: 80.00%
+Water: 16.97
+Minerals: 12.62
+Sunlight: 51.72
+Day 2:
+Your EcoSystem: 
+Animals: [Animal: Dog, population: 3, type: CARNIVORE, Animal: Tiger, population: 93, type: CARNIVORE, Animal: Elephant, population: 74, type: HERBIVORE],
+Plants: [Plant: Mint, quantity: 0, Plant: Pine, quantity: 59, Plant: Oak, quantity: 222, Plant: Cherry, quantity: 237, Plant: Jasmine, quantity: 57, Plant: Maple, quantity: 125, Plant: Ivy, quantity: 493],
+Resources: [Resource: WATER, amount: 571.0, Resource: MINERALS, amount: 498.4, Resource: SUNLIGHT, amount: 508.6],
+Climate: Temperature: 36.0, Humidity: 42.9
+Environment: Temperature: 25.83°C
+Humidity: 80.00%
+Water: 16.97
+Minerals: 12.62
+Sunlight: 51.72
+
+Animals:
+ - Animal: Dog, population: 2, type: CARNIVORE
+ - Animal: Tiger, population: 96, type: CARNIVORE
+ - Animal: Elephant, population: 67, type: HERBIVORE
+Plants:
+ - Plant: Mint, quantity: 0
+ - Plant: Pine, quantity: 25
+ - Plant: Oak, quantity: 115
+ - Plant: Cherry, quantity: 123
+ - Plant: Jasmine, quantity: 30
+ - Plant: Maple, quantity: 65
+ - Plant: Ivy, quantity: 254
+Environment:
+ - Temperature: 25.43°C
+Humidity: 80.00%
+Water: 42.98
+Minerals: 10.91
+Sunlight: 52.58
+Day 3:
+Your EcoSystem: 
+Animals: [Animal: Dog, population: 2, type: CARNIVORE, Animal: Tiger, population: 96, type: CARNIVORE, Animal: Elephant, population: 67, type: HERBIVORE],
+Plants: [Plant: Mint, quantity: 0, Plant: Pine, quantity: 25, Plant: Oak, quantity: 115, Plant: Cherry, quantity: 123, Plant: Jasmine, quantity: 30, Plant: Maple, quantity: 65, Plant: Ivy, quantity: 254],
+Resources: [Resource: WATER, amount: 571.0, Resource: MINERALS, amount: 498.4, Resource: SUNLIGHT, amount: 508.6],
+Climate: Temperature: 36.0, Humidity: 42.9
+Environment: Temperature: 25.43°C
+Humidity: 80.00%
+Water: 42.98
+Minerals: 10.91
+Sunlight: 52.58
+
+Animals:
+ - Animal: Dog, population: 1, type: CARNIVORE
+ - Animal: Tiger, population: 99, type: CARNIVORE
+ - Animal: Elephant, population: 59, type: HERBIVORE
+Plants:
+ - Plant: Mint, quantity: 0
+ - Plant: Pine, quantity: 8
+ - Plant: Oak, quantity: 60
+ - Plant: Cherry, quantity: 64
+ - Plant: Jasmine, quantity: 16
+ - Plant: Maple, quantity: 34
+ - Plant: Ivy, quantity: 132
+Environment:
+ - Temperature: 26.10°C
+Humidity: 80.00%
+Water: 36.91
+Minerals: 10.54
+Sunlight: 53.44
+Day 4:
+Your EcoSystem: 
+Animals: [Animal: Dog, population: 1, type: CARNIVORE, Animal: Tiger, population: 99, type: CARNIVORE, Animal: Elephant, population: 59, type: HERBIVORE],
+Plants: [Plant: Mint, quantity: 0, Plant: Pine, quantity: 8, Plant: Oak, quantity: 60, Plant: Cherry, quantity: 64, Plant: Jasmine, quantity: 16, Plant: Maple, quantity: 34, Plant: Ivy, quantity: 132],
+Resources: [Resource: WATER, amount: 571.0, Resource: MINERALS, amount: 498.4, Resource: SUNLIGHT, amount: 508.6],
+Climate: Temperature: 36.0, Humidity: 42.9
+Environment: Temperature: 26.10°C
+Humidity: 80.00%
+Water: 36.91
+Minerals: 10.54
+Sunlight: 53.44
+
+Animals:
+ - Animal: Dog, population: 0, type: CARNIVORE
+ - Animal: Tiger, population: 101, type: CARNIVORE
+ - Animal: Elephant, population: 51, type: HERBIVORE
+Plants:
+ - Plant: Mint, quantity: 0
+ - Plant: Pine, quantity: 0
+ - Plant: Oak, quantity: 30
+ - Plant: Cherry, quantity: 33
+ - Plant: Jasmine, quantity: 8
+ - Plant: Maple, quantity: 18
+ - Plant: Ivy, quantity: 69
+Environment:
+ - Temperature: 25.98°C
+Humidity: 80.00%
+Water: 20.71
+Minerals: 13.40
+Sunlight: 54.30
+Day 5:
+Your EcoSystem: 
+Animals: [Animal: Dog, population: 0, type: CARNIVORE, Animal: Tiger, population: 101, type: CARNIVORE, Animal: Elephant, population: 51, type: HERBIVORE],
+Plants: [Plant: Mint, quantity: 0, Plant: Pine, quantity: 0, Plant: Oak, quantity: 30, Plant: Cherry, quantity: 33, Plant: Jasmine, quantity: 8, Plant: Maple, quantity: 18, Plant: Ivy, quantity: 69],
+Resources: [Resource: WATER, amount: 571.0, Resource: MINERALS, amount: 498.4, Resource: SUNLIGHT, amount: 508.6],
+Climate: Temperature: 36.0, Humidity: 42.9
+Environment: Temperature: 25.98°C
+Humidity: 80.00%
+Water: 20.71
+Minerals: 13.40
+Sunlight: 54.30
+
+Animals:
+ - Animal: Dog, population: 0, type: CARNIVORE
+ - Animal: Tiger, population: 104, type: CARNIVORE
+ - Animal: Elephant, population: 42, type: HERBIVORE
+Plants:
+ - Plant: Mint, quantity: 0
+ - Plant: Pine, quantity: 0
+ - Plant: Oak, quantity: 12
+ - Plant: Cherry, quantity: 17
+ - Plant: Jasmine, quantity: 4
+ - Plant: Maple, quantity: 9
+ - Plant: Ivy, quantity: 36
+Environment:
+ - Temperature: 27.45°C
+Humidity: 80.00%
+Water: 9.62
+Minerals: 11.45
+Sunlight: 55.16
+Day 6:
+Your EcoSystem: 
+Animals: [Animal: Dog, population: 0, type: CARNIVORE, Animal: Tiger, population: 104, type: CARNIVORE, Animal: Elephant, population: 42, type: HERBIVORE],
+Plants: [Plant: Mint, quantity: 0, Plant: Pine, quantity: 0, Plant: Oak, quantity: 12, Plant: Cherry, quantity: 17, Plant: Jasmine, quantity: 4, Plant: Maple, quantity: 9, Plant: Ivy, quantity: 36],
+Resources: [Resource: WATER, amount: 571.0, Resource: MINERALS, amount: 498.4, Resource: SUNLIGHT, amount: 508.6],
+Climate: Temperature: 36.0, Humidity: 42.9
+Environment: Temperature: 27.45°C
+Humidity: 80.00%
+Water: 9.62
+Minerals: 11.45
+Sunlight: 55.16
+
+Animals:
+ - Animal: Dog, population: 0, type: CARNIVORE
+ - Animal: Tiger, population: 107, type: CARNIVORE
+ - Animal: Elephant, population: 32, type: HERBIVORE
+Plants:
+ - Plant: Mint, quantity: 0
+ - Plant: Pine, quantity: 0
+ - Plant: Oak, quantity: 3
+ - Plant: Cherry, quantity: 9
+ - Plant: Jasmine, quantity: 2
+ - Plant: Maple, quantity: 5
+ - Plant: Ivy, quantity: 19
+Environment:
+ - Temperature: 29.10°C
+Humidity: 80.00%
+Water: 9.24
+Minerals: 3.51
+Sunlight: 56.01
+Day 7:
+Your EcoSystem: 
+Animals: [Animal: Dog, population: 0, type: CARNIVORE, Animal: Tiger, population: 107, type: CARNIVORE, Animal: Elephant, population: 32, type: HERBIVORE],
+Plants: [Plant: Mint, quantity: 0, Plant: Pine, quantity: 0, Plant: Oak, quantity: 3, Plant: Cherry, quantity: 9, Plant: Jasmine, quantity: 2, Plant: Maple, quantity: 5, Plant: Ivy, quantity: 19],
+Resources: [Resource: WATER, amount: 571.0, Resource: MINERALS, amount: 498.4, Resource: SUNLIGHT, amount: 508.6],
+Climate: Temperature: 36.0, Humidity: 42.9
+Environment: Temperature: 29.10°C
+Humidity: 80.00%
+Water: 9.24
+Minerals: 3.51
+Sunlight: 56.01
+
+Animals:
+ - Animal: Dog, population: 0, type: CARNIVORE
+ - Animal: Tiger, population: 110, type: CARNIVORE
+ - Animal: Elephant, population: 22, type: HERBIVORE
+Plants:
+ - Plant: Mint, quantity: 0
+ - Plant: Pine, quantity: 0
+ - Plant: Oak, quantity: 0
+ - Plant: Cherry, quantity: 5
+ - Plant: Jasmine, quantity: 1
+ - Plant: Maple, quantity: 3
+ - Plant: Ivy, quantity: 10
+Environment:
+ - Temperature: 29.52°C
+Humidity: 80.00%
+Water: 10.00
+Minerals: 15.84
+Sunlight: 56.86
+Day 8:
+Your EcoSystem: 
+Animals: [Animal: Dog, population: 0, type: CARNIVORE, Animal: Tiger, population: 110, type: CARNIVORE, Animal: Elephant, population: 22, type: HERBIVORE],
+Plants: [Plant: Mint, quantity: 0, Plant: Pine, quantity: 0, Plant: Oak, quantity: 0, Plant: Cherry, quantity: 5, Plant: Jasmine, quantity: 1, Plant: Maple, quantity: 3, Plant: Ivy, quantity: 10],
+Resources: [Resource: WATER, amount: 571.0, Resource: MINERALS, amount: 498.4, Resource: SUNLIGHT, amount: 508.6],
+Climate: Temperature: 36.0, Humidity: 42.9
+Environment: Temperature: 29.52°C
+Humidity: 80.00%
+Water: 10.00
+Minerals: 15.84
+Sunlight: 56.86
+
+Animals:
+ - Animal: Dog, population: 0, type: CARNIVORE
+ - Animal: Tiger, population: 113, type: CARNIVORE
+ - Animal: Elephant, population: 10, type: HERBIVORE
+Plants:
+ - Plant: Mint, quantity: 0
+ - Plant: Pine, quantity: 0
+ - Plant: Oak, quantity: 0
+ - Plant: Cherry, quantity: 2
+ - Plant: Jasmine, quantity: 1
+ - Plant: Maple, quantity: 2
+ - Plant: Ivy, quantity: 5
+Environment:
+ - Temperature: 31.43°C
+Humidity: 80.00%
+Water: 15.57
+Minerals: 16.92
+Sunlight: 57.72
+Day 9:
+Your EcoSystem: 
+Animals: [Animal: Dog, population: 0, type: CARNIVORE, Animal: Tiger, population: 113, type: CARNIVORE, Animal: Elephant, population: 10, type: HERBIVORE],
+Plants: [Plant: Mint, quantity: 0, Plant: Pine, quantity: 0, Plant: Oak, quantity: 0, Plant: Cherry, quantity: 2, Plant: Jasmine, quantity: 1, Plant: Maple, quantity: 2, Plant: Ivy, quantity: 5],
+Resources: [Resource: WATER, amount: 571.0, Resource: MINERALS, amount: 498.4, Resource: SUNLIGHT, amount: 508.6],
+Climate: Temperature: 36.0, Humidity: 42.9
+Environment: Temperature: 31.43°C
+Humidity: 80.00%
+Water: 15.57
+Minerals: 16.92
+Sunlight: 57.72
+
+Animals:
+ - Animal: Dog, population: 0, type: CARNIVORE
+ - Animal: Tiger, population: 100, type: CARNIVORE
+ - Animal: Elephant, population: 0, type: HERBIVORE
+Plants:
+ - Plant: Mint, quantity: 0
+ - Plant: Pine, quantity: 0
+ - Plant: Oak, quantity: 0
+ - Plant: Cherry, quantity: 1
+ - Plant: Jasmine, quantity: 1
+ - Plant: Maple, quantity: 1
+ - Plant: Ivy, quantity: 3
+Environment:
+ - Temperature: 33.29°C
+Humidity: 80.00%
+Water: 46.91
+Minerals: 22.83
+Sunlight: 58.56
+Day 10:
+Your EcoSystem: 
+Animals: [Animal: Dog, population: 0, type: CARNIVORE, Animal: Tiger, population: 100, type: CARNIVORE, Animal: Elephant, population: 0, type: HERBIVORE],
+Plants: [Plant: Mint, quantity: 0, Plant: Pine, quantity: 0, Plant: Oak, quantity: 0, Plant: Cherry, quantity: 1, Plant: Jasmine, quantity: 1, Plant: Maple, quantity: 1, Plant: Ivy, quantity: 3],
+Resources: [Resource: WATER, amount: 571.0, Resource: MINERALS, amount: 498.4, Resource: SUNLIGHT, amount: 508.6],
+Climate: Temperature: 36.0, Humidity: 42.9
+Environment: Temperature: 33.29°C
+Humidity: 80.00%
+Water: 46.91
+Minerals: 22.83
+Sunlight: 58.56
+

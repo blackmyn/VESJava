@@ -1,22 +1,26 @@
 package ecosystem;
 
 import utils.FileHandler;
+import utils.Logger;
 
+import java.io.Serializable;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class EcoSystem {
+public class EcoSystem implements Serializable {
     private List<Animal> animals;
     private List<Plant> plants;
     private List<Resource> resources;
     private Climate climate;
+    private Environment environment;
 
     public EcoSystem() {
         this.animals = new ArrayList<>();
         this.plants = new ArrayList<>();
         this.resources = new ArrayList<>();
+        this.environment = new Environment();
     }
 
     public void createNewSimulation() throws IOException {
@@ -27,18 +31,18 @@ public class EcoSystem {
         List<Plant> availablePlants = FileHandler.loadPlants("data/plants.txt");
         List<Resource> availableResources = FileHandler.loadResources("data/resources.txt");
 
-        int numberOfAnimals = random.nextInt(4) + 1;
+        int numberOfAnimals = random.nextInt(5) + 1;
         for (int i = 0; i < numberOfAnimals; i++) {
             Animal randomAnimal = availableAnimals.get(random.nextInt(availableAnimals.size()));
-            int randomPopulation = random.nextInt(50) + 1;
-            animals.add(new Animal(randomAnimal.getName(), randomPopulation, randomAnimal.getType()));
+            int randomPopulation = random.nextInt(100) + 1;
+            animals.add(new Animal(randomAnimal.getName(), randomPopulation, randomAnimal.getType(), 0.1, 0.05));
         }
 
-        int numberOfPlants = random.nextInt(3) + 1;
+        int numberOfPlants = random.nextInt(10) + 1;
         for (int i = 0; i < numberOfPlants; i++) {
             Plant randomPlant = availablePlants.get(random.nextInt(availablePlants.size()));
-            int randomQuantity = random.nextInt(10000) + 1;
-            plants.add(new Plant(randomPlant.getName(), randomQuantity));
+            int randomQuantity = random.nextInt(1000) + 1; //  Увеличено  начальное  количество  растений
+            plants.add(new Plant(randomPlant.getName(), randomQuantity, 0.15, 0.5, 0.3));
         }
 
         for (Resource templateResource : availableResources) {
@@ -49,6 +53,7 @@ public class EcoSystem {
         double randomTemperature = Math.round(random.nextDouble() * 40 * 10.0) / 10.0;
         double randomHumidity = Math.round(random.nextDouble() * 100 * 10.0) / 10.0;
         climate = new Climate(randomTemperature, randomHumidity);
+        environment.setResourcesFromList(resources);
 
         System.out.println("New simulation created!");
         showEcosystem();
@@ -59,6 +64,32 @@ public class EcoSystem {
                 Math.round(temperature * 10.0) / 10.0,
                 Math.round(humidity * 10.0) / 10.0
         );
+    }
+
+    public void simulateOneDay() {
+        environment.growPlants(plants);
+
+        for (Animal animal : animals) {
+            animal.seekFood(this);
+        }
+
+        environment.update(animals, plants);
+
+        applyNaturalMortality();
+
+        Logger logger = new Logger("simulation.log");
+        logger.logAnimals(animals);
+        logger.logPlants(plants);
+        logger.logEnvironment(environment);
+    }
+
+    private void applyNaturalMortality() {
+        for (Animal animal : animals) {
+            animal.applyNaturalMortality(0.01);
+        }
+        for (Plant plant : plants) {
+            plant.applyNaturalMortality(0.005);
+        }
     }
 
     public void addAnimal(Animal animal) {
@@ -81,16 +112,8 @@ public class EcoSystem {
         resources.add(resource);
     }
 
-    public void removeResource(String resourceType) {
-        resources.removeIf(resource -> resource.getType().equalsIgnoreCase(resourceType));
-    }
-
-    public void clearSimulation() {
-        animals.clear();
-        plants.clear();
-        resources.clear();
-        climate = null;
-        System.out.println("Simulation cleared.");
+    public void removeResource(Resource.ResourceType resourceType) {
+        resources.removeIf(resource -> resource.getType() == resourceType);
     }
 
     public void showEcosystem() {
@@ -104,37 +127,45 @@ public class EcoSystem {
             System.out.println(plant);
         }
 
-        System.out.println("Current resources: ");
-        for (Resource resource : resources) {
-            System.out.println(resource);
-        }
-
-        System.out.println("Current climate: " + climate);
+        System.out.println("\nCurrent Environment: ");
+        System.out.println(environment.toString());
     }
 
     @Override
     public String toString() {
-        return "Your EcoSystem: " + "\n" +
-                "Animals: " + animals + ",\n" +
-                "Plants: " + plants + ",\n" +
-                "Resources: " + resources + ",\n" +
-                "Climate: " + climate;
-    }
+        StringBuilder sb = new StringBuilder("Your EcoSystem: \n");
 
-    public void setAnimals(List<Animal> animals) {
-        this.animals = animals;
-    }
+        sb.append("Animals: [");
+        for (int i = 0; i < animals.size(); i++) {
+            sb.append(animals.get(i).toString());
+            if (i < animals.size() - 1) {
+                sb.append(", ");
+            }
+        }
+        sb.append("],\n");
 
-    public void setPlants(List<Plant> plants) {
-        this.plants = plants;
-    }
+        sb.append("Plants: [");
+        for (int i = 0; i < plants.size(); i++) {
+            sb.append(plants.get(i).toString());
+            if (i < plants.size() - 1) {
+                sb.append(", ");
+            }
+        }
+        sb.append("],\n");
 
-    public void setResources(List<Resource> resources) {
-        this.resources = resources;
-    }
+        sb.append("Resources: [");
+        for (int i = 0; i < resources.size(); i++) {
+            sb.append(resources.get(i).toString());
+            if (i < resources.size() - 1) {
+                sb.append(", ");
+            }
+        }
+        sb.append("],\n");
 
-    public void setClimate(Climate climate) {
-        this.climate = climate;
+        sb.append("Climate: ").append(climate.toString()).append("\n");
+        sb.append("Environment: ").append(environment.toString()).append("\n");
+
+        return sb.toString();
     }
 
     public Climate getClimate() {

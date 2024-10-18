@@ -1,5 +1,0 @@
-Your EcoSystem: 
-Animals: [Animal: Giraffe, population: 45, Animal: Lion, population: 46, Animal: Eagle, population: 45, Animal: Horse, population: 17, Animal: Zebra, population: 37],
-Plants: [Plant: Cherry, quantity: 43],
-Resources: [Resource: Sunlight, amount: 379.1228173091466],
-Climate: Temperature: 34.27851707947459, Humidity: 99.05955452344062

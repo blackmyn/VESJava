@@ -16,8 +16,8 @@ public class FileHandler {
         String line;
         while ((line = reader.readLine()) != null) {
             String[] parts = line.split(" ");
-            AnimalType type = parts[1].equalsIgnoreCase("HERBIVORE") ? AnimalType.HERBIVORE : AnimalType.CARNIVORE;
-            animals.add(new Animal(parts[0], Integer.parseInt(parts[2]), type));
+            Animal.AnimalType type = parts[1].equalsIgnoreCase("HERBIVORE") ? Animal.AnimalType.HERBIVORE : Animal.AnimalType.CARNIVORE;
+            animals.add(new Animal(parts[0], Integer.parseInt(parts[2]), type, 0.1, 0.05));
         }
         reader.close();
         return animals;
@@ -29,7 +29,7 @@ public class FileHandler {
         String line;
         while ((line = reader.readLine()) != null) {
             String[] parts = line.split(" ");
-            plants.add(new Plant(parts[0], Integer.parseInt(parts[1])));
+            plants.add(new Plant(parts[0], Integer.parseInt(parts[1]), 0.15, 0.5, 0.3));
         }
         reader.close();
         return plants;
@@ -41,7 +41,12 @@ public class FileHandler {
         String line;
         while ((line = reader.readLine()) != null) {
             String[] parts = line.split(" ");
-            resources.add(new Resource(parts[0], Double.parseDouble(parts[1])));
+            Resource.ResourceType type = parts[0].equalsIgnoreCase("WATER") ?
+                    Resource.ResourceType.WATER :
+                    (parts[0].equalsIgnoreCase("MINERALS") ?
+                            Resource.ResourceType.MINERALS :
+                            Resource.ResourceType.SUNLIGHT);
+            resources.add(new Resource(type, Double.parseDouble(parts[1])));
         }
         reader.close();
         return resources;

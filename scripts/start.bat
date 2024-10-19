@@ -9,7 +9,7 @@ for %%a in (..\src\main\java\com\ecosystem\utils\*.java) do javac -d "..\classes
 if %errorlevel% == 0 (
     echo Starting program...
     cd ..
-    java -cp "..\classes" D:\skillss\VESJava\src\main\java\Main.java
+    java -cp "..\classes" D:\skillss\VESJava\src\main\java\ecosystem\Main.java
 ) else (
     echo Compilation Error! Check for problems in your Java code.
 )

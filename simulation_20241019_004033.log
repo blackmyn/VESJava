@@ -1,0 +1,130 @@
+INFO: 
+Day 1:
+INFO: Your EcoSystem: 
+Animals: [Animal: Owl, population: 0, type: CARNIVORE, Animal: Crocodile, population: 0, type: CARNIVORE],
+Plants: [Plant: Jasmine, quantity: 31725],
+Resources: [Resource: WATER, amount: 1700.0, Resource: MINERALS, amount: 3222.7, Resource: SUNLIGHT, amount: 6766.3],
+Climate: Temperature: 8.5, Humidity: 73.5
+Environment: Temperature: 24.77°C
+Humidity: 80.00%
+Water: 153.73
+Minerals: 1477.68
+Sunlight: 50.86
+
+INFO: 
+Day 2:
+INFO: Your EcoSystem: 
+Animals: [Animal: Owl, population: 0, type: CARNIVORE, Animal: Crocodile, population: 0, type: CARNIVORE],
+Plants: [Plant: Jasmine, quantity: 16683],
+Resources: [Resource: WATER, amount: 1700.0, Resource: MINERALS, amount: 3222.7, Resource: SUNLIGHT, amount: 6766.3],
+Climate: Temperature: 8.5, Humidity: 73.5
+Environment: Temperature: 25.23°C
+Humidity: 80.00%
+Water: 44.26
+Minerals: 693.65
+Sunlight: 51.72
+
+INFO: 
+Day 3:
+INFO: Your EcoSystem: 
+Animals: [Animal: Owl, population: 0, type: CARNIVORE, Animal: Crocodile, population: 0, type: CARNIVORE],
+Plants: [Plant: Jasmine, quantity: 8615],
+Resources: [Resource: WATER, amount: 1700.0, Resource: MINERALS, amount: 3222.7, Resource: SUNLIGHT, amount: 6766.3],
+Climate: Temperature: 8.5, Humidity: 73.5
+Environment: Temperature: 26.24°C
+Humidity: 80.00%
+Water: 98.77
+Minerals: 404.22
+Sunlight: 52.58
+
+INFO: 
+Day 4:
+INFO: Your EcoSystem: 
+Animals: [Animal: Owl, population: 0, type: CARNIVORE, Animal: Crocodile, population: 0, type: CARNIVORE],
+Plants: [Plant: Jasmine, quantity: 4449],
+Resources: [Resource: WATER, amount: 1700.0, Resource: MINERALS, amount: 3222.7, Resource: SUNLIGHT, amount: 6766.3],
+Climate: Temperature: 8.5, Humidity: 73.5
+Environment: Temperature: 26.40°C
+Humidity: 80.00%
+Water: 212.70
+Minerals: 310.59
+Sunlight: 53.44
+
+INFO: 
+Day 5:
+INFO: Your EcoSystem: 
+Animals: [Animal: Owl, population: 0, type: CARNIVORE, Animal: Crocodile, population: 0, type: CARNIVORE],
+Plants: [Plant: Jasmine, quantity: 2297],
+Resources: [Resource: WATER, amount: 1700.0, Resource: MINERALS, amount: 3222.7, Resource: SUNLIGHT, amount: 6766.3],
+Climate: Temperature: 8.5, Humidity: 73.5
+Environment: Temperature: 26.29°C
+Humidity: 80.00%
+Water: 127.09
+Minerals: 234.81
+Sunlight: 54.30
+
+INFO: 
+Day 6:
+INFO: Your EcoSystem: 
+Animals: [Animal: Owl, population: 0, type: CARNIVORE, Animal: Crocodile, population: 0, type: CARNIVORE],
+Plants: [Plant: Jasmine, quantity: 1187],
+Resources: [Resource: WATER, amount: 1700.0, Resource: MINERALS, amount: 3222.7, Resource: SUNLIGHT, amount: 6766.3],
+Climate: Temperature: 8.5, Humidity: 73.5
+Environment: Temperature: 27.67°C
+Humidity: 80.00%
+Water: 215.76
+Minerals: 398.54
+Sunlight: 55.16
+
+INFO: 
+Day 7:
+INFO: Your EcoSystem: 
+Animals: [Animal: Owl, population: 0, type: CARNIVORE, Animal: Crocodile, population: 0, type: CARNIVORE],
+Plants: [Plant: Jasmine, quantity: 613],
+Resources: [Resource: WATER, amount: 1700.0, Resource: MINERALS, amount: 3222.7, Resource: SUNLIGHT, amount: 6766.3],
+Climate: Temperature: 8.5, Humidity: 73.5
+Environment: Temperature: 29.15°C
+Humidity: 80.00%
+Water: 368.25
+Minerals: 430.34
+Sunlight: 56.01
+
+INFO: 
+Day 8:
+INFO: Your EcoSystem: 
+Animals: [Animal: Owl, population: 0, type: CARNIVORE, Animal: Crocodile, population: 0, type: CARNIVORE],
+Plants: [Plant: Jasmine, quantity: 317],
+Resources: [Resource: WATER, amount: 1700.0, Resource: MINERALS, amount: 3222.7, Resource: SUNLIGHT, amount: 6766.3],
+Climate: Temperature: 8.5, Humidity: 73.5
+Environment: Temperature: 30.96°C
+Humidity: 80.00%
+Water: 402.51
+Minerals: 640.31
+Sunlight: 56.86
+
+INFO: 
+Day 9:
+INFO: Your EcoSystem: 
+Animals: [Animal: Owl, population: 0, type: CARNIVORE, Animal: Crocodile, population: 0, type: CARNIVORE],
+Plants: [Plant: Jasmine, quantity: 165],
+Resources: [Resource: WATER, amount: 1700.0, Resource: MINERALS, amount: 3222.7, Resource: SUNLIGHT, amount: 6766.3],
+Climate: Temperature: 8.5, Humidity: 73.5
+Environment: Temperature: 32.96°C
+Humidity: 80.00%
+Water: 544.31
+Minerals: 732.47
+Sunlight: 57.72
+
+INFO: 
+Day 10:
+INFO: Your EcoSystem: 
+Animals: [Animal: Owl, population: 0, type: CARNIVORE, Animal: Crocodile, population: 0, type: CARNIVORE],
+Plants: [Plant: Jasmine, quantity: 86],
+Resources: [Resource: WATER, amount: 1700.0, Resource: MINERALS, amount: 3222.7, Resource: SUNLIGHT, amount: 6766.3],
+Climate: Temperature: 8.5, Humidity: 73.5
+Environment: Temperature: 35.00°C
+Humidity: 80.00%
+Water: 542.60
+Minerals: 862.65
+Sunlight: 58.56
+

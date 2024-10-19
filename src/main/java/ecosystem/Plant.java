@@ -21,20 +21,12 @@ public class Plant implements Serializable {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getQuantity() {
         return quantity;
     }
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
-    }
-
-    public double getGrowthRate() {
-        return growthRate;
     }
 
     public void setGrowthRate(double growthRate) {

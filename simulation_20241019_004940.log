@@ -1,0 +1,39 @@
+INFO: 
+Day 1:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 869, type: CARNIVORE, Animal: Dog, population: 796, type: CARNIVORE, Animal: Lion, population: 89, type: CARNIVORE, Animal: Giraffe, population: 461, type: HERBIVORE],
+Plants: [Plant: Cherry, quantity: 6560, Plant: Daisy, quantity: 34704, Plant: Cactus, quantity: 37961, Plant: Cherry, quantity: 8408, Plant: Pansy, quantity: 41660, Plant: Lavender, quantity: 40966, Plant: Bamboo, quantity: 7077, Plant: Cactus, quantity: 15479],
+Resources: [Resource: WATER, amount: 881.2, Resource: MINERALS, amount: 7294.5, Resource: SUNLIGHT, amount: 8559.7],
+Climate: Temperature: 21.1, Humidity: 5.0
+Environment: Temperature: 24.59°C
+Humidity: 79.56%
+Water: 182.45
+Minerals: 163.08
+Sunlight: 50.86
+
+INFO: 
+Day 2:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 989, type: CARNIVORE, Animal: Dog, population: 905, type: CARNIVORE, Animal: Lion, population: 100, type: CARNIVORE, Animal: Giraffe, population: 327, type: HERBIVORE],
+Plants: [Plant: Cherry, quantity: 3354, Plant: Daisy, quantity: 17890, Plant: Cactus, quantity: 19569, Plant: Cherry, quantity: 4335, Plant: Pansy, quantity: 21476, Plant: Lavender, quantity: 21117, Plant: Bamboo, quantity: 3649, Plant: Cactus, quantity: 7979],
+Resources: [Resource: WATER, amount: 881.2, Resource: MINERALS, amount: 7294.5, Resource: SUNLIGHT, amount: 8559.7],
+Climate: Temperature: 21.1, Humidity: 5.0
+Environment: Temperature: 25.47°C
+Humidity: 80.00%
+Water: 12.44
+Minerals: 247.97
+Sunlight: 51.72
+
+INFO: 
+Day 3:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 1125, type: CARNIVORE, Animal: Dog, population: 1029, type: CARNIVORE, Animal: Lion, population: 113, type: CARNIVORE, Animal: Giraffe, population: 146, type: HERBIVORE],
+Plants: [Plant: Cherry, quantity: 1721, Plant: Daisy, quantity: 9238, Plant: Cactus, quantity: 10106, Plant: Cherry, quantity: 2238, Plant: Pansy, quantity: 11091, Plant: Lavender, quantity: 10905, Plant: Bamboo, quantity: 1884, Plant: Cactus, quantity: 4121],
+Resources: [Resource: WATER, amount: 881.2, Resource: MINERALS, amount: 7294.5, Resource: SUNLIGHT, amount: 8559.7],
+Climate: Temperature: 21.1, Humidity: 5.0
+Environment: Temperature: 26.93°C
+Humidity: 80.00%
+Water: 94.15
+Minerals: 172.21
+Sunlight: 52.58
+

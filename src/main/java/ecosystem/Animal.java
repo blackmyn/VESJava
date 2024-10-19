@@ -105,9 +105,16 @@ public class Animal implements Serializable {
             applyNaturalMortality(starvationRate);
         } else {
             int newAnimals = (int) (population * reproductionRate * ((double) foodEaten / totalFoodNeeded));
+            if (foodEaten > totalFoodNeeded * 1.2) {
+                newAnimals += (int) (newAnimals * 0.2);
+            }
+            if (foodEaten > totalFoodNeeded * 1.5) {
+                newAnimals += (int) (newAnimals * 0.5);
+            }
             population += newAnimals;
         }
     }
+
 
     public void applyNaturalMortality(double deathRate) {
         population = Math.max(0, (int) (population - (population * deathRate)));

@@ -5,7 +5,6 @@ import utils.PredictionEngine;
 
 import java.io.IOException;
 import java.io.Serializable;
-import java.util.Scanner;
 
 public class Simulation implements Serializable {
     private EcoSystem ecosystem;

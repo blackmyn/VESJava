@@ -1,7 +1,6 @@
 package ecosystem;
 
 import utils.FileHandler;
-import utils.Logger;
 
 import java.io.Serializable;
 import java.io.IOException;
@@ -23,6 +22,14 @@ public class EcoSystem implements Serializable {
         this.environment = new Environment();
     }
 
+    public void clearSimulation() {
+        animals.clear();
+        plants.clear();
+        resources.clear();
+        climate = null;
+        System.out.println("Simulation cleared.");
+    }
+
     public void createNewSimulation() throws IOException {
         System.out.println("Creating new simulation...");
         Random random = new Random();
@@ -34,19 +41,19 @@ public class EcoSystem implements Serializable {
         int numberOfAnimals = random.nextInt(5) + 1;
         for (int i = 0; i < numberOfAnimals; i++) {
             Animal randomAnimal = availableAnimals.get(random.nextInt(availableAnimals.size()));
-            int randomPopulation = random.nextInt(100) + 1;
-            animals.add(new Animal(randomAnimal.getName(), randomPopulation, randomAnimal.getType(), 0.1, 0.05));
+            int randomPopulation = random.nextInt(1000) + 1;
+            animals.add(new Animal(randomAnimal.getName(), randomPopulation, randomAnimal.getType(), 0.1, 0.15));
         }
 
         int numberOfPlants = random.nextInt(10) + 1;
         for (int i = 0; i < numberOfPlants; i++) {
             Plant randomPlant = availablePlants.get(random.nextInt(availablePlants.size()));
-            int randomQuantity = random.nextInt(1000) + 1; //  Увеличено  начальное  количество  растений
-            plants.add(new Plant(randomPlant.getName(), randomQuantity, 0.15, 0.5, 0.3));
+            int randomQuantity = random.nextInt(50000) + 1;
+            plants.add(new Plant(randomPlant.getName(), randomQuantity, 0.15, 0.05, 0.03));
         }
 
         for (Resource templateResource : availableResources) {
-            double randomResourceAmount = Math.round(random.nextDouble() * 1000 * 10.0) / 10.0;
+            double randomResourceAmount = Math.round(random.nextDouble() * 10000 * 10.0) / 10.0;
             resources.add(new Resource(templateResource.getType(), randomResourceAmount));
         }
 
@@ -76,11 +83,6 @@ public class EcoSystem implements Serializable {
         environment.update(animals, plants);
 
         applyNaturalMortality();
-
-        Logger logger = new Logger("simulation.log");
-        logger.logAnimals(animals);
-        logger.logPlants(plants);
-        logger.logEnvironment(environment);
     }
 
     private void applyNaturalMortality() {
@@ -135,34 +137,23 @@ public class EcoSystem implements Serializable {
     public String toString() {
         StringBuilder sb = new StringBuilder("Your EcoSystem: \n");
 
-        sb.append("Animals: [");
+        sb.append("Animals: ");
         for (int i = 0; i < animals.size(); i++) {
             sb.append(animals.get(i).toString());
             if (i < animals.size() - 1) {
                 sb.append(", ");
             }
         }
-        sb.append("],\n");
+        sb.append("\n");
 
-        sb.append("Plants: [");
+        sb.append("Plants: ");
         for (int i = 0; i < plants.size(); i++) {
             sb.append(plants.get(i).toString());
             if (i < plants.size() - 1) {
                 sb.append(", ");
             }
         }
-        sb.append("],\n");
-
-        sb.append("Resources: [");
-        for (int i = 0; i < resources.size(); i++) {
-            sb.append(resources.get(i).toString());
-            if (i < resources.size() - 1) {
-                sb.append(", ");
-            }
-        }
-        sb.append("],\n");
-
-        sb.append("Climate: ").append(climate.toString()).append("\n");
+        sb.append("\n");
         sb.append("Environment: ").append(environment.toString()).append("\n");
 
         return sb.toString();

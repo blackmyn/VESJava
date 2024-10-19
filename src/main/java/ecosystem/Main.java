@@ -1,4 +1,5 @@
-import ecosystem.*;
+package ecosystem;
+
 import utils.Logger;
 import utils.PredictionEngine;
 
@@ -18,7 +19,7 @@ public class Main {
         }
     }
 
-    private static void showMainMenu(Scanner scanner, Simulation simulation) {
+    public static void showMainMenu(Scanner scanner, Simulation simulation) {
         System.out.println("\nWelcome to the ecosystem simulator!");
         System.out.println("1. Start new simulation");
         System.out.println("2. Load existing simulation");
@@ -43,8 +44,9 @@ public class Main {
         }
     }
 
-    private static void handleNewSimulation(Scanner scanner, Simulation simulation) {
-        while (true) {
+    public static void handleNewSimulation(Scanner scanner, Simulation simulation) {
+        boolean continueLoop = true;
+        while (continueLoop) {
             System.out.println("\nNew Simulation:");
             System.out.println("1. Create random ecosystem");
             System.out.println("2. Set custom parameters");
@@ -67,14 +69,15 @@ public class Main {
                     handleCustomParameters(scanner, simulation);
                     break;
                 case 0:
-                    return;
+                    continueLoop = false;
+                    break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
         }
     }
 
-    private static void handleCustomParameters(Scanner scanner, Simulation simulation) {
+    public static void handleCustomParameters(Scanner scanner, Simulation simulation) {
         EcoSystem ecosystem = simulation.getEcosystem();
 
         while (true) {
@@ -113,7 +116,7 @@ public class Main {
         }
     }
 
-    private static void handleLoadSimulation(Scanner scanner, Simulation simulation) {
+    public static void handleLoadSimulation(Scanner scanner, Simulation simulation) {
         File simulationsDir = new File(simulation.getRepository().getDataDirectory());
         File[] simulationFiles = simulationsDir.listFiles((dir, name) -> name.endsWith(".txt"));
 
@@ -147,8 +150,10 @@ public class Main {
         }
     }
 
-    private static void handleSimulationMenu(Scanner scanner, Simulation simulation) {
+    public static void handleSimulationMenu(Scanner scanner, Simulation simulation) throws IOException {
         PredictionEngine predictionEngine = simulation.getPredictionEngine();
+        Logger logger = new Logger("simulation");
+
         while (true) {
 
             System.out.println("\nSimulation running...");
@@ -158,6 +163,8 @@ public class Main {
             System.out.println("4. Save simulation");
             System.out.println("5. Create prediction state");
             System.out.println("6. Run automatic simulation");
+            System.out.println("7. Clear simulation(start over)");
+            System.out.println("8. Set log level");
             System.out.println("0. Back to main menu");
 
             int choice = scanner.nextInt();
@@ -187,6 +194,13 @@ public class Main {
                 case 6:
                     runAutomaticSimulation(simulation);
                     break;
+                case 7:
+                    simulation.getEcosystem().clearSimulation();
+                    simulation.createNewSimulation();
+                    break;
+                case 8:
+                    setLogLevel(scanner, logger);
+                    break;
                 case 0:
                     return;
                 default:
@@ -195,17 +209,47 @@ public class Main {
         }
     }
 
+    private static void setLogLevel(Scanner scanner, Logger logger) {
+        System.out.println("\nChoose log level:");
+        System.out.println("1. DEBUG");
+        System.out.println("2. INFO");
+        System.out.println("3. WARN");
+        System.out.println("4. ERROR");
+        System.out.print("Enter your choice: ");
+
+        int choice = scanner.nextInt();
+        scanner.nextLine();
+
+        switch (choice) {
+            case 1:
+                logger.setLogLevel(Logger.LogLevel.DEBUG);
+                break;
+            case 2:
+                logger.setLogLevel(Logger.LogLevel.INFO);
+                break;
+            case 3:
+                logger.setLogLevel(Logger.LogLevel.WARN);
+                break;
+            case 4:
+                logger.setLogLevel(Logger.LogLevel.ERROR);
+                break;
+            default:
+                System.out.println("Invalid choice. Log level remains unchanged.");
+        }
+    }
+
     private static void runAutomaticSimulation(Simulation simulation) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of days to simulate: ");
         int daysToSimulate = scanner.nextInt();
 
-        Logger logger = new Logger("simulation.log");
+        Logger logger = new Logger("simulation");
 
         System.out.println("Starting automatic simulation...");
         for (int day = 1; day <= daysToSimulate; day++) {
             simulation.simulateOneDay();
             logger.logDay(day);
+            logger.logEcosystem(simulation.getEcosystem());
 
             try {
                 Thread.sleep(1000);
@@ -272,14 +316,29 @@ public class Main {
         }
     }
 
-    private static void addAnimal(Scanner scanner, EcoSystem ecosystem) {
+    public static void addAnimal(Scanner scanner, EcoSystem ecosystem) { //checked
         System.out.print("Enter animal name: ");
         String animalName = scanner.nextLine();
         System.out.print("Enter population: ");
         int population = getValidIntInput(scanner);
-        System.out.print("Enter animal type (CARNIVORE/HERBIVORE): ");
-        String typeStr = scanner.nextLine();
-        Animal.AnimalType animalType = Animal.AnimalType.valueOf(typeStr.toUpperCase());
+
+        scanner.nextLine();
+
+        Animal.AnimalType animalType = null;
+        while (animalType == null) {
+            System.out.print("Enter animal type (CARNIVORE/HERBIVORE): ");
+            String typeStr = scanner.nextLine().trim().toUpperCase();
+            if (typeStr.isEmpty()) {
+                System.out.println("Animal type cannot be empty. Please enter either CARNIVORE or HERBIVORE.");
+                continue;
+            }
+            try {
+                animalType = Animal.AnimalType.valueOf(typeStr);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Invalid animal type. Please enter either CARNIVORE or HERBIVORE.");
+            }
+        }
+
         System.out.print("Enter food requirement: ");
         double foodRequirement = getValidDoubleInput(scanner);
         System.out.print("Enter reproduction rate: ");
@@ -288,13 +347,13 @@ public class Main {
         ecosystem.addAnimal(new Animal(animalName, population, animalType, foodRequirement, reproductionRate));
     }
 
-    private static void removeAnimal(Scanner scanner, EcoSystem ecosystem) {
+    public static void removeAnimal(Scanner scanner, EcoSystem ecosystem) {
         System.out.print("Enter the name of the animal to remove: ");
         String animalToRemove = scanner.nextLine();
         ecosystem.removeAnimal(animalToRemove);
     }
 
-    private static void updateAnimal(Scanner scanner, EcoSystem ecosystem) {
+    public static void updateAnimal(Scanner scanner, EcoSystem ecosystem) {
         System.out.print("Enter the name of the animal to update: ");
         String animalName = scanner.nextLine();
 
@@ -338,7 +397,7 @@ public class Main {
         System.out.println("Animal not found: " + animalName);
     }
 
-    private static void addPlant(Scanner scanner, EcoSystem ecosystem) {
+    public static void addPlant(Scanner scanner, EcoSystem ecosystem) {
         System.out.print("Enter plant name: ");
         String plantName = scanner.nextLine();
         System.out.print("Enter quantity: ");
@@ -353,13 +412,13 @@ public class Main {
         ecosystem.addPlant(new Plant(plantName, quantity, growthRate, waterNeed, mineralsNeed));
     }
 
-    private static void removePlant(Scanner scanner, EcoSystem ecosystem) {
+    public static void removePlant(Scanner scanner, EcoSystem ecosystem) {
         System.out.print("Enter the name of the plant to remove: ");
         String plantToRemove = scanner.nextLine();
         ecosystem.removePlant(plantToRemove);
     }
 
-    private static void updatePlant(Scanner scanner, EcoSystem ecosystem) {
+    public static void updatePlant(Scanner scanner, EcoSystem ecosystem) {
         System.out.print("Enter the name of the plant to update: ");
         String plantName = scanner.nextLine();
 
@@ -402,7 +461,7 @@ public class Main {
         System.out.println("Plant not found: " + plantName);
     }
 
-    private static void addResource(Scanner scanner, EcoSystem ecosystem) {
+    public static void addResource(Scanner scanner, EcoSystem ecosystem) {
         System.out.print("Enter resource type (WATER/MINERALS/SUNLIGHT): ");
         String typeStr = scanner.nextLine();
 
@@ -416,7 +475,7 @@ public class Main {
         }
     }
 
-    private static void removeResource(Scanner scanner, EcoSystem ecosystem) {
+    public static void removeResource(Scanner scanner, EcoSystem ecosystem) {
         System.out.print("Enter the type of the resource to remove (WATER/MINERALS/SUNLIGHT): ");
         String typeStr = scanner.nextLine();
 
@@ -428,7 +487,7 @@ public class Main {
         }
     }
 
-    private static void updateResource(Scanner scanner, EcoSystem ecosystem) {
+    public static void updateResource(Scanner scanner, EcoSystem ecosystem) {
         System.out.print("Enter the type of the resource to update (WATER/MINERALS/SUNLIGHT): ");
         String typeStr = scanner.nextLine();
 
@@ -448,7 +507,7 @@ public class Main {
         }
     }
 
-    private static int getValidIntInput(Scanner scanner) {
+    public static int getValidIntInput(Scanner scanner) {
         while (!scanner.hasNextInt()) {
             System.out.println("Invalid input. Please enter an integer: ");
             scanner.next();
@@ -456,7 +515,7 @@ public class Main {
         return scanner.nextInt();
     }
 
-    private static double getValidDoubleInput(Scanner scanner) {
+    public static double getValidDoubleInput(Scanner scanner) {
         while (!scanner.hasNextDouble()) {
             System.out.println("Invalid input. Please enter a number: ");
             scanner.next();

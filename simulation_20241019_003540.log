@@ -1,0 +1,195 @@
+INFO: 
+Day 1:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 1362, type: CARNIVORE, Animal: Rabbit, population: 678, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 5938],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 24.20°C
+Humidity: 80.00%
+Water: 7367.03
+Minerals: 203.47
+Sunlight: 52.58
+
+INFO: 
+Day 2:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 1550, type: CARNIVORE, Animal: Rabbit, population: 616, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 4354],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 24.69°C
+Humidity: 80.00%
+Water: 7129.10
+Minerals: 133.98
+Sunlight: 53.44
+
+INFO: 
+Day 3:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 1764, type: CARNIVORE, Animal: Rabbit, population: 524, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 3166],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 26.07°C
+Humidity: 80.00%
+Water: 6951.84
+Minerals: 45.14
+Sunlight: 54.30
+
+INFO: 
+Day 4:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 2007, type: CARNIVORE, Animal: Rabbit, population: 396, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 2290],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 27.30°C
+Humidity: 80.00%
+Water: 6926.50
+Minerals: 201.77
+Sunlight: 55.16
+
+INFO: 
+Day 5:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 2284, type: CARNIVORE, Animal: Rabbit, population: 222, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 1661],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 28.81°C
+Humidity: 80.00%
+Water: 6884.36
+Minerals: 190.17
+Sunlight: 56.01
+
+INFO: 
+Day 6:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 2200, type: CARNIVORE, Animal: Rabbit, population: 0, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 1217],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 29.22°C
+Humidity: 80.00%
+Water: 6781.46
+Minerals: 365.76
+Sunlight: 56.86
+
+INFO: 
+Day 7:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 0, type: CARNIVORE, Animal: Rabbit, population: 0, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 889],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 31.17°C
+Humidity: 80.00%
+Water: 6725.68
+Minerals: 399.53
+Sunlight: 57.72
+
+INFO: 
+Day 8:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 0, type: CARNIVORE, Animal: Rabbit, population: 0, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 649],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 32.11°C
+Humidity: 80.00%
+Water: 6677.91
+Minerals: 482.54
+Sunlight: 58.56
+
+INFO: 
+Day 9:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 0, type: CARNIVORE, Animal: Rabbit, population: 0, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 473],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 33.24°C
+Humidity: 80.00%
+Water: 6847.76
+Minerals: 644.83
+Sunlight: 59.41
+
+INFO: 
+Day 10:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 0, type: CARNIVORE, Animal: Rabbit, population: 0, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 347],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 35.00°C
+Humidity: 80.00%
+Water: 7012.18
+Minerals: 740.61
+Sunlight: 60.26
+
+INFO: 
+Day 11:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 0, type: CARNIVORE, Animal: Rabbit, population: 0, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 255],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 35.00°C
+Humidity: 80.00%
+Water: 7132.17
+Minerals: 904.49
+Sunlight: 61.10
+
+INFO: 
+Day 12:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 0, type: CARNIVORE, Animal: Rabbit, population: 0, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 189],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 35.00°C
+Humidity: 80.00%
+Water: 7188.04
+Minerals: 975.16
+Sunlight: 61.93
+
+INFO: 
+Day 13:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 0, type: CARNIVORE, Animal: Rabbit, population: 0, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 141],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 35.00°C
+Humidity: 80.00%
+Water: 7816.75
+Minerals: 1628.71
+Sunlight: 62.77
+
+INFO: 
+Day 14:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 0, type: CARNIVORE, Animal: Rabbit, population: 0, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 108],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 35.00°C
+Humidity: 80.00%
+Water: 7996.98
+Minerals: 1694.86
+Sunlight: 63.60
+
+INFO: 
+Day 15:
+INFO: Your EcoSystem: 
+Animals: [Animal: Bear, population: 0, type: CARNIVORE, Animal: Rabbit, population: 0, type: HERBIVORE],
+Plants: [Plant: Maple, quantity: 84],
+Resources: [Resource: WATER, amount: 8862.2, Resource: MINERALS, amount: 578.2, Resource: SUNLIGHT, amount: 5445.7],
+Climate: Temperature: 22.7, Humidity: 18.7
+Environment: Temperature: 35.00°C
+Humidity: 80.00%
+Water: 8079.46
+Minerals: 1735.69
+Sunlight: 64.42
+

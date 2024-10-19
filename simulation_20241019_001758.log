@@ -1,0 +1,130 @@
+INFO: 
+Day 1:
+INFO: Your EcoSystem: 
+Animals: [Animal: Rabbit, population: 34, type: HERBIVORE, Animal: Lion, population: 84, type: CARNIVORE, Animal: Dog, population: 24, type: CARNIVORE, Animal: Rabbit, population: 50, type: HERBIVORE],
+Plants: [Plant: Willow, quantity: 8, Plant: Willow, quantity: 5019, Plant: Ivy, quantity: 3235, Plant: Willow, quantity: 791, Plant: Sunflower, quantity: 5125],
+Resources: [Resource: WATER, amount: 6639.6, Resource: MINERALS, amount: 2145.0, Resource: SUNLIGHT, amount: 1620.8],
+Climate: Temperature: 17.1, Humidity: 73.0
+Environment: Temperature: 25.47°C
+Humidity: 79.45%
+Water: 5220.75
+Minerals: 1434.11
+Sunlight: 50.86
+
+INFO: 
+Day 2:
+INFO: Your EcoSystem: 
+Animals: [Animal: Rabbit, population: 24, type: HERBIVORE, Animal: Lion, population: 87, type: CARNIVORE, Animal: Dog, population: 24, type: CARNIVORE, Animal: Rabbit, population: 51, type: HERBIVORE],
+Plants: [Plant: Willow, quantity: 2, Plant: Willow, quantity: 5981, Plant: Ivy, quantity: 3855, Plant: Willow, quantity: 943, Plant: Sunflower, quantity: 6108],
+Resources: [Resource: WATER, amount: 6639.6, Resource: MINERALS, amount: 2145.0, Resource: SUNLIGHT, amount: 1620.8],
+Climate: Temperature: 17.1, Humidity: 73.0
+Environment: Temperature: 26.02°C
+Humidity: 80.00%
+Water: 3649.78
+Minerals: 613.35
+Sunlight: 51.72
+
+INFO: 
+Day 3:
+INFO: Your EcoSystem: 
+Animals: [Animal: Rabbit, population: 14, type: HERBIVORE, Animal: Lion, population: 90, type: CARNIVORE, Animal: Dog, population: 24, type: CARNIVORE, Animal: Rabbit, population: 52, type: HERBIVORE],
+Plants: [Plant: Willow, quantity: 0, Plant: Willow, quantity: 7123, Plant: Ivy, quantity: 4594, Plant: Willow, quantity: 1125, Plant: Sunflower, quantity: 7279],
+Resources: [Resource: WATER, amount: 6639.6, Resource: MINERALS, amount: 2145.0, Resource: SUNLIGHT, amount: 1620.8],
+Climate: Temperature: 17.1, Humidity: 73.0
+Environment: Temperature: 27.12°C
+Humidity: 80.00%
+Water: 1706.43
+Minerals: 189.74
+Sunlight: 52.58
+
+INFO: 
+Day 4:
+INFO: Your EcoSystem: 
+Animals: [Animal: Rabbit, population: 2, type: HERBIVORE, Animal: Lion, population: 93, type: CARNIVORE, Animal: Dog, population: 24, type: CARNIVORE, Animal: Rabbit, population: 53, type: HERBIVORE],
+Plants: [Plant: Willow, quantity: 0, Plant: Willow, quantity: 6779, Plant: Ivy, quantity: 4377, Plant: Willow, quantity: 1072, Plant: Sunflower, quantity: 6934],
+Resources: [Resource: WATER, amount: 6639.6, Resource: MINERALS, amount: 2145.0, Resource: SUNLIGHT, amount: 1620.8],
+Climate: Temperature: 17.1, Humidity: 73.0
+Environment: Temperature: 27.58°C
+Humidity: 80.00%
+Water: 238.92
+Minerals: 129.97
+Sunlight: 53.44
+
+INFO: 
+Day 5:
+INFO: Your EcoSystem: 
+Animals: [Animal: Rabbit, population: 0, type: HERBIVORE, Animal: Lion, population: 96, type: CARNIVORE, Animal: Dog, population: 24, type: CARNIVORE, Animal: Rabbit, population: 45, type: HERBIVORE],
+Plants: [Plant: Willow, quantity: 0, Plant: Willow, quantity: 3724, Plant: Ivy, quantity: 2407, Plant: Willow, quantity: 591, Plant: Sunflower, quantity: 3813],
+Resources: [Resource: WATER, amount: 6639.6, Resource: MINERALS, amount: 2145.0, Resource: SUNLIGHT, amount: 1620.8],
+Climate: Temperature: 17.1, Humidity: 73.0
+Environment: Temperature: 28.44°C
+Humidity: 80.00%
+Water: 197.14
+Minerals: 208.88
+Sunlight: 54.30
+
+INFO: 
+Day 6:
+INFO: Your EcoSystem: 
+Animals: [Animal: Rabbit, population: 0, type: HERBIVORE, Animal: Lion, population: 99, type: CARNIVORE, Animal: Dog, population: 24, type: CARNIVORE, Animal: Rabbit, population: 34, type: HERBIVORE],
+Plants: [Plant: Willow, quantity: 0, Plant: Willow, quantity: 2073, Plant: Ivy, quantity: 1342, Plant: Willow, quantity: 330, Plant: Sunflower, quantity: 2126],
+Resources: [Resource: WATER, amount: 6639.6, Resource: MINERALS, amount: 2145.0, Resource: SUNLIGHT, amount: 1620.8],
+Climate: Temperature: 17.1, Humidity: 73.0
+Environment: Temperature: 29.52°C
+Humidity: 80.00%
+Water: 94.75
+Minerals: 137.09
+Sunlight: 55.16
+
+INFO: 
+Day 7:
+INFO: Your EcoSystem: 
+Animals: [Animal: Rabbit, population: 0, type: HERBIVORE, Animal: Lion, population: 101, type: CARNIVORE, Animal: Dog, population: 24, type: CARNIVORE, Animal: Rabbit, population: 23, type: HERBIVORE],
+Plants: [Plant: Willow, quantity: 0, Plant: Willow, quantity: 1084, Plant: Ivy, quantity: 704, Plant: Willow, quantity: 174, Plant: Sunflower, quantity: 1114],
+Resources: [Resource: WATER, amount: 6639.6, Resource: MINERALS, amount: 2145.0, Resource: SUNLIGHT, amount: 1620.8],
+Climate: Temperature: 17.1, Humidity: 73.0
+Environment: Temperature: 30.87°C
+Humidity: 80.00%
+Water: 675.33
+Minerals: 647.76
+Sunlight: 56.01
+
+INFO: 
+Day 8:
+INFO: Your EcoSystem: 
+Animals: [Animal: Rabbit, population: 0, type: HERBIVORE, Animal: Lion, population: 104, type: CARNIVORE, Animal: Dog, population: 24, type: CARNIVORE, Animal: Rabbit, population: 10, type: HERBIVORE],
+Plants: [Plant: Willow, quantity: 0, Plant: Willow, quantity: 1016, Plant: Ivy, quantity: 661, Plant: Willow, quantity: 164, Plant: Sunflower, quantity: 1045],
+Resources: [Resource: WATER, amount: 6639.6, Resource: MINERALS, amount: 2145.0, Resource: SUNLIGHT, amount: 1620.8],
+Climate: Temperature: 17.1, Humidity: 73.0
+Environment: Temperature: 32.23°C
+Humidity: 80.00%
+Water: 464.71
+Minerals: 548.77
+Sunlight: 56.86
+
+INFO: 
+Day 9:
+INFO: Your EcoSystem: 
+Animals: [Animal: Rabbit, population: 0, type: HERBIVORE, Animal: Lion, population: 107, type: CARNIVORE, Animal: Dog, population: 0, type: CARNIVORE, Animal: Rabbit, population: 0, type: HERBIVORE],
+Plants: [Plant: Willow, quantity: 0, Plant: Willow, quantity: 888, Plant: Ivy, quantity: 579, Plant: Willow, quantity: 144, Plant: Sunflower, quantity: 914],
+Resources: [Resource: WATER, amount: 6639.6, Resource: MINERALS, amount: 2145.0, Resource: SUNLIGHT, amount: 1620.8],
+Climate: Temperature: 17.1, Humidity: 73.0
+Environment: Temperature: 33.88°C
+Humidity: 80.00%
+Water: 386.39
+Minerals: 572.16
+Sunlight: 57.72
+
+INFO: 
+Day 10:
+INFO: Your EcoSystem: 
+Animals: [Animal: Rabbit, population: 0, type: HERBIVORE, Animal: Lion, population: 0, type: CARNIVORE, Animal: Dog, population: 0, type: CARNIVORE, Animal: Rabbit, population: 0, type: HERBIVORE],
+Plants: [Plant: Willow, quantity: 0, Plant: Willow, quantity: 668, Plant: Ivy, quantity: 435, Plant: Willow, quantity: 109, Plant: Sunflower, quantity: 688],
+Resources: [Resource: WATER, amount: 6639.6, Resource: MINERALS, amount: 2145.0, Resource: SUNLIGHT, amount: 1620.8],
+Climate: Temperature: 17.1, Humidity: 73.0
+Environment: Temperature: 35.00°C
+Humidity: 80.00%
+Water: 351.89
+Minerals: 480.21
+Sunlight: 58.56
+

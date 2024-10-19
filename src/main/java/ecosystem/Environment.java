@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Random;
 
 public class Environment implements Serializable {
-    private static final double OPTIMAL_WATER = 500.0;
-    private static final double OPTIMAL_MINERALS = 500.0;
-    private static final double OPTIMAL_SUNLIGHT = 500.0;
+    private static final double OPTIMAL_WATER = 5000.0;
+    private static final double OPTIMAL_MINERALS = 5000.0;
+    private static final double OPTIMAL_SUNLIGHT = 5000.0;
     private static final double OPTIMAL_HUMIDITY = 50.0;
     private static final double TEMPERATURE_STRESS_LOW = 5.0;
     private static final double TEMPERATURE_STRESS_HIGH = 35.0;
@@ -32,12 +32,20 @@ public class Environment implements Serializable {
     public void update(List<Animal> animals, List<Plant> plants) {
         consumeResources(plants);
         applyClimateChange();
-        replenishResources();
+        if (random.nextDouble() < 0.01) {
+            applyRainEvent();
+        }
         sunlight = calculateSunlight();
         dayOfYear = (dayOfYear % 365) + 1;
     }
-
-    private void consumeResources(List<Plant> plants) {
+    private void applyRainEvent() {
+        System.out.println("Rain event!");
+        water += 500;
+        minerals += 500;
+        water = Math.min(water, 50000);
+        minerals = Math.min(minerals, 50000);
+    }
+    public void consumeResources(List<Plant> plants) {
         for (Plant plant : plants) {
             water = Math.max(0, water - (plant.getWaterNeed() * plant.getQuantity()));
             minerals = Math.max(0, minerals - (plant.getMineralsNeed() * plant.getQuantity()));
@@ -61,7 +69,7 @@ public class Environment implements Serializable {
         consumeResources(plants);
     }
 
-    private double calculateGrowthFactor(Environment environment, Plant plant) {
+    public double calculateGrowthFactor(Environment environment, Plant plant) {
         double waterFactor = calculateFactor(water, OPTIMAL_WATER);
         double mineralsFactor = calculateFactor(minerals, OPTIMAL_MINERALS);
         double sunlightFactor = calculateFactor(sunlight, OPTIMAL_SUNLIGHT);
@@ -90,23 +98,21 @@ public class Environment implements Serializable {
         }
     }
 
-    private void replenishResources() {
-        water += random.nextDouble() * 50;
-        minerals += random.nextDouble() * 25;
+    public void replenishResources() {
+        water += random.nextDouble() * 250;
+        minerals += random.nextDouble() * 250;
 
-        //  Ограничиваем  ресурсы
-        water = Math.min(water, 1000);
-        minerals = Math.min(minerals, 1000);
+        water = Math.min(water, 50000);
+        minerals = Math.min(minerals, 50000);
     }
 
-    private void applyClimateChange() {
+    public void applyClimateChange() {
         double seasonalTemperatureChange = 10 * Math.sin((dayOfYear / 365.0) * 2 * Math.PI);
         double seasonalHumidityChange = 20 * Math.cos((dayOfYear / 365.0) * 2 * Math.PI);
 
         temperature += seasonalTemperatureChange + (random.nextDouble() - 0.5) * 2;
         humidity += seasonalHumidityChange + (random.nextDouble() - 0.5) * 5;
 
-        //  Ограничиваем  температуру  и  влажность
         temperature = Math.min(temperature, 35);
         humidity = Math.max(0, Math.min(humidity, 80));
     }
@@ -146,5 +152,49 @@ public class Environment implements Serializable {
                 "Water: "  +  String.format("%.2f", water) +  "\n"  +
                 "Minerals: "  +  String.format("%.2f", minerals) +  "\n"  +
                 "Sunlight: "  +  String.format("%.2f", sunlight);
+    }
+
+    public double getHumidity() {
+        return humidity;
+    }
+
+    public void setMinerals(double minerals) {
+        this.minerals = minerals;
+    }
+
+    public void setSunlight(double sunlight) {
+        this.sunlight = sunlight;
+    }
+
+    public void setHumidity(double humidity) {
+        this.humidity = humidity;
+    }
+
+    public double getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(double temperature) {
+        this.temperature = temperature;
+    }
+
+    public double getSunlight() {
+        return sunlight;
+    }
+
+    public void setWater(double water) {
+        this.water = water;
+    }
+
+    public double getMinerals() {
+        return minerals;
+    }
+
+    public double getWater() {
+        return water;
+    }
+
+    public int getDayOfYear() {
+        return dayOfYear;
     }
 }

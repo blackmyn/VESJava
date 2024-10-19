@@ -1,0 +1,26 @@
+INFO: 
+Day 1:
+INFO: Your EcoSystem: 
+Animals: [Animal: Lion, population: 0, type: CARNIVORE, Animal: Crocodile, population: 0, type: CARNIVORE],
+Plants: [Plant: Orchid, quantity: 5236, Plant: Aloe, quantity: 3530, Plant: Pansy, quantity: 726],
+Resources: [Resource: WATER, amount: 1918.7, Resource: MINERALS, amount: 3318.9, Resource: SUNLIGHT, amount: 6110.9],
+Climate: Temperature: 28.2, Humidity: 76.7
+Environment: Temperature: 24.86°C
+Humidity: 80.00%
+Water: 1119.09
+Minerals: 2802.31
+Sunlight: 50.86
+
+INFO: 
+Day 2:
+INFO: Your EcoSystem: 
+Animals: [Animal: Lion, population: 0, type: CARNIVORE, Animal: Crocodile, population: 0, type: CARNIVORE],
+Plants: [Plant: Orchid, quantity: 6239, Plant: Aloe, quantity: 4207, Plant: Pansy, quantity: 865],
+Resources: [Resource: WATER, amount: 1918.7, Resource: MINERALS, amount: 3318.9, Resource: SUNLIGHT, amount: 6110.9],
+Climate: Temperature: 28.2, Humidity: 76.7
+Environment: Temperature: 25.22°C
+Humidity: 80.00%
+Water: 134.11
+Minerals: 2296.86
+Sunlight: 51.72
+

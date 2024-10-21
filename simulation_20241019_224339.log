@@ -1,0 +1,110 @@
+INFO: 
+Day 1:
+INFO: Your EcoSystem: 
+Animals: Animal: Penguin, population: 903, type: CARNIVORE, Animal: Horse, population: 354, type: HERBIVORE, Animal: Fox, population: 1162, type: CARNIVORE
+Plants: Plant: Cactus, quantity: 3596, Plant: Sunflower, quantity: 16673, Plant: Cactus, quantity: 14307, Plant: Lavender, quantity: 11313, Plant: Bamboo, quantity: 19321, Plant: Maple, quantity: 497
+Environment: Temperature: 27.85°C
+Humidity: 80.00%
+Water: 31239.05
+Minerals: 19192.25
+Sunlight: 52.58
+
+INFO: 
+Day 2:
+INFO: Your EcoSystem: 
+Animals: Animal: Penguin, population: 1027, type: CARNIVORE, Animal: Horse, population: 185, type: HERBIVORE, Animal: Fox, population: 1322, type: CARNIVORE
+Plants: Plant: Cactus, quantity: 2049, Plant: Sunflower, quantity: 9618, Plant: Cactus, quantity: 8252, Plant: Lavender, quantity: 6526, Plant: Bamboo, quantity: 11145, Plant: Maple, quantity: 287
+Environment: Temperature: 28.28°C
+Humidity: 80.00%
+Water: 27431.25
+Minerals: 16907.57
+Sunlight: 53.44
+
+INFO: 
+Day 3:
+INFO: Your EcoSystem: 
+Animals: Animal: Penguin, population: 1169, type: CARNIVORE, Animal: Horse, population: 0, type: HERBIVORE, Animal: Fox, population: 941, type: CARNIVORE
+Plants: Plant: Cactus, quantity: 1150, Plant: Sunflower, quantity: 5432, Plant: Cactus, quantity: 4661, Plant: Lavender, quantity: 3686, Plant: Bamboo, quantity: 6294, Plant: Maple, quantity: 163
+Environment: Temperature: 28.73°C
+Humidity: 80.00%
+Water: 25281.85
+Minerals: 15617.93
+Sunlight: 54.30
+
+INFO: 
+Day 4:
+INFO: Your EcoSystem: 
+Animals: Animal: Penguin, population: 0, type: CARNIVORE, Animal: Horse, population: 0, type: HERBIVORE, Animal: Fox, population: 0, type: CARNIVORE
+Plants: Plant: Cactus, quantity: 642, Plant: Sunflower, quantity: 3031, Plant: Cactus, quantity: 2601, Plant: Lavender, quantity: 2057, Plant: Bamboo, quantity: 3512, Plant: Maple, quantity: 92
+Environment: Temperature: 29.86°C
+Humidity: 80.00%
+Water: 24082.55
+Minerals: 14898.35
+Sunlight: 55.16
+
+INFO: 
+Day 5:
+INFO: Your EcoSystem: 
+Animals: Animal: Penguin, population: 0, type: CARNIVORE, Animal: Horse, population: 0, type: HERBIVORE, Animal: Fox, population: 0, type: CARNIVORE
+Plants: Plant: Cactus, quantity: 356, Plant: Sunflower, quantity: 1680, Plant: Cactus, quantity: 1441, Plant: Lavender, quantity: 1141, Plant: Bamboo, quantity: 1947, Plant: Maple, quantity: 51
+Environment: Temperature: 30.74°C
+Humidity: 80.00%
+Water: 23417.95
+Minerals: 14499.59
+Sunlight: 56.01
+
+INFO: 
+Day 6:
+INFO: Your EcoSystem: 
+Animals: Animal: Penguin, population: 0, type: CARNIVORE, Animal: Horse, population: 0, type: HERBIVORE, Animal: Fox, population: 0, type: CARNIVORE
+Plants: Plant: Cactus, quantity: 198, Plant: Sunflower, quantity: 928, Plant: Cactus, quantity: 796, Plant: Lavender, quantity: 630, Plant: Bamboo, quantity: 1075, Plant: Maple, quantity: 28
+Environment: Temperature: 32.59°C
+Humidity: 80.00%
+Water: 23050.95
+Minerals: 14279.39
+Sunlight: 56.86
+
+INFO: 
+Day 7:
+INFO: Your EcoSystem: 
+Animals: Animal: Penguin, population: 0, type: CARNIVORE, Animal: Horse, population: 0, type: HERBIVORE, Animal: Fox, population: 0, type: CARNIVORE
+Plants: Plant: Cactus, quantity: 110, Plant: Sunflower, quantity: 512, Plant: Cactus, quantity: 439, Plant: Lavender, quantity: 347, Plant: Bamboo, quantity: 593, Plant: Maple, quantity: 16
+Environment: Temperature: 34.36°C
+Humidity: 80.00%
+Water: 22848.55
+Minerals: 14157.95
+Sunlight: 57.72
+
+INFO: 
+Day 8:
+INFO: Your EcoSystem: 
+Animals: Animal: Penguin, population: 0, type: CARNIVORE, Animal: Horse, population: 0, type: HERBIVORE, Animal: Fox, population: 0, type: CARNIVORE
+Plants: Plant: Cactus, quantity: 61, Plant: Sunflower, quantity: 282, Plant: Cactus, quantity: 242, Plant: Lavender, quantity: 192, Plant: Bamboo, quantity: 327, Plant: Maple, quantity: 9
+Environment: Temperature: 35.00°C
+Humidity: 80.00%
+Water: 22736.95
+Minerals: 14090.99
+Sunlight: 58.56
+
+INFO: 
+Day 9:
+INFO: Your EcoSystem: 
+Animals: Animal: Penguin, population: 0, type: CARNIVORE, Animal: Horse, population: 0, type: HERBIVORE, Animal: Fox, population: 0, type: CARNIVORE
+Plants: Plant: Cactus, quantity: 34, Plant: Sunflower, quantity: 156, Plant: Cactus, quantity: 134, Plant: Lavender, quantity: 106, Plant: Bamboo, quantity: 181, Plant: Maple, quantity: 5
+Environment: Temperature: 35.00°C
+Humidity: 80.00%
+Water: 22675.35
+Minerals: 14054.03
+Sunlight: 59.41
+
+INFO: 
+Day 10:
+INFO: Your EcoSystem: 
+Animals: Animal: Penguin, population: 0, type: CARNIVORE, Animal: Horse, population: 0, type: HERBIVORE, Animal: Fox, population: 0, type: CARNIVORE
+Plants: Plant: Cactus, quantity: 19, Plant: Sunflower, quantity: 86, Plant: Cactus, quantity: 74, Plant: Lavender, quantity: 59, Plant: Bamboo, quantity: 100, Plant: Maple, quantity: 3
+Environment: Temperature: 35.00°C
+Humidity: 80.00%
+Water: 22641.25
+Minerals: 14033.57
+Sunlight: 60.26
+

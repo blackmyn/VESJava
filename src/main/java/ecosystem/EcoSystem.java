@@ -53,7 +53,7 @@ public class EcoSystem implements Serializable {
         }
 
         for (Resource templateResource : availableResources) {
-            double randomResourceAmount = Math.round(random.nextDouble() * 10000 * 10.0) / 10.0;
+            double randomResourceAmount = Math.round(random.nextDouble() * 100000 * 10.0) / 10.0;
             resources.add(new Resource(templateResource.getType(), randomResourceAmount));
         }
 

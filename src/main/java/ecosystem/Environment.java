@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Random;
 
 public class Environment implements Serializable {
-    private static final double OPTIMAL_WATER = 5000.0;
-    private static final double OPTIMAL_MINERALS = 5000.0;
-    private static final double OPTIMAL_SUNLIGHT = 5000.0;
+    private static final double OPTIMAL_WATER = 50000.0;
+    private static final double OPTIMAL_MINERALS = 50000.0;
+    private static final double OPTIMAL_SUNLIGHT = 50000.0;
     private static final double OPTIMAL_HUMIDITY = 50.0;
     private static final double TEMPERATURE_STRESS_LOW = 5.0;
     private static final double TEMPERATURE_STRESS_HIGH = 35.0;

@@ -1,20 +1,14 @@
 @echo off
-REM Переходим в директорию проекта
 cd /d "%~dp0"
-
-REM Компилируем все .java файлы в папке src/main/java и выводим скомпилированные .class файлы в папку out
-echo Компиляция файлов...
+echo Compilation
 javac -d out -sourcepath src\main\java src\main\java\ecosystem\Main.java
 
-REM Проверяем, успешно ли прошла компиляция
 if %ERRORLEVEL% neq 0 (
-    echo Ошибка компиляции!
+    echo Error
     exit /b %ERRORLEVEL%
 )
 
-REM Запускаем основной класс из папки out
-echo Запуск программы...
+echo Starting program...
 java -cp out ecosystem.Main
 
-REM Ожидание перед закрытием окна
 pause

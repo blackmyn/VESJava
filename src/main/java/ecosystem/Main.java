@@ -164,7 +164,6 @@ public class Main {
             System.out.println("5. Create prediction state");
             System.out.println("6. Run automatic simulation");
             System.out.println("7. Clear simulation(start over)");
-            System.out.println("8. Set log level");
             System.out.println("0. Back to main menu");
 
             int choice = scanner.nextInt();
